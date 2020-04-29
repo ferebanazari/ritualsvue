@@ -3,7 +3,6 @@
     <div id="app">
       <div id="nav">
         <router-link to="/">Home</router-link>|
-        <router-link to="/about">About</router-link>|
         <router-link to="/all-matrett">All Matrett</router-link>|
         <router-link to="/add-matrett">Add Matrett</router-link>|
         <router-link to="/delete-matrett">Delete matrett</router-link>|
