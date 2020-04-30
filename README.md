@@ -1,4 +1,5 @@
-# rituals
+# Rituals
+A reasturant that displays dishes
 
 ## Project setup
 ```
