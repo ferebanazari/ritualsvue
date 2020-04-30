@@ -1,7 +1,10 @@
 <template>
   <v-card>
-    <v-img :src="`https://localhost:5001/images/${defName.imgName}`" height="200px"></v-img>
-    <v-card-title>{{ defName.name }}</v-card-title>
+    <v-img src="@/assets/pizza-hero.jpg" height="200px"></v-img>
+
+    <v-card-title>Name: {{ defName.name }}</v-card-title>
+    <span>Price: {{ defName.price }}</span>
+    <h6>Desc: {{ defName.description }}</h6>
   </v-card>
 </template>
 

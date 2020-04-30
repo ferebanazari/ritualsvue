@@ -1,6 +1,8 @@
 <template>
   <div>
-    <span class="headline">allMatrett</span>
+    <span class="headline">All Matrett Dishes</span>
+    <br />
+    <span>You will find all the delicious dishes from our reasturant below</span>
     <v-row>
       <v-col cols="12" sm="6" lg="4" v-for="matrett in matretter" :key="matrett.id">
         <matrettItem :defName="matrett" />
@@ -22,7 +24,7 @@ export default {
 
   created() {
     axios
-      .get("https://localhost:5001/rituals")
+      .get("https://localhost:5001/ritualsadmin")
 
       .then(result => {
         console.log(result.data);

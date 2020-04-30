@@ -1,37 +1,29 @@
 <template>
   <v-app>
-    <div id="app">
-      <div id="nav">
-        <router-link to="/">Home</router-link>|
-        <router-link to="/all-matrett">All Matrett</router-link>|
-        <router-link to="/add-matrett">Add Matrett</router-link>|
-        <router-link to="/delete-matrett">Delete matrett</router-link>|
-        <router-link to="/edit-matrett">Edit Matrett</router-link>
-      </div>
+    <v-content class="text-center">
+      <v-app-bar light>
+        <v-btn text>
+          <v-img class="mr-3" src="@/assets/LogoRituals.png" height="45px" width="45px" />
+          <router-link style="text-decoration:none;color:#000;" to="/">Home</router-link>
+        </v-btn>
+        <v-spacer></v-spacer>
+        <v-btn text>
+          <router-link style="text-decoration:none;color:#000;" to="/all-matrett">All Matrett</router-link>
+        </v-btn>
+        <v-btn text>
+          <router-link style="text-decoration:none;color:#000;" to="/add-matrett">Add Matrett</router-link>
+        </v-btn>
+        <v-btn text>
+          <router-link style="text-decoration:none;color:#000;" to="/delete-matrett">Delete matrett</router-link>
+        </v-btn>
+        <v-btn text>
+          <router-link style="text-decoration:none;color:#000;" to="/edit-matrett">Edit Matrett</router-link>
+        </v-btn>
+      </v-app-bar>
       <router-view />
-    </div>
+    </v-content>
   </v-app>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

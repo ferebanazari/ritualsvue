@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="headline">allMatrett</span>
+    <span class="headline">All Matrett Dishes</span>
     <v-row>
       <v-col cols="12" sm="6" lg="4" v-for="matrett in matretter" :key="matrett.id">
         <matrettItem :id="matrett.id" :name="matrett.name" :imageSrc="matrett.imageSrc" />
